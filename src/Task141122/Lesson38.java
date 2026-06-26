@@ -13,7 +13,7 @@ public class Lesson38 {
         counters(text);
     }
     public static void counters(String text) {
-        int letter = 0, probel = 0, number = 0, different = 0;//инициализация
+        int letter = 0, probel = 0, number = 0, different = 0; //инициализация
         char[] count = text.toCharArray();//текст становится чаром
         for(int i = 0; i < count.length; i++) {//чар будет итерироваться
             if(count[i] >= 'a' && count[i] <= 'z' || count[i] >= 'A' && count[i] <= 'Z') {//если есть символ в промежутке алфавитных букв
