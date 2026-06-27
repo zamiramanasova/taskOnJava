@@ -17,7 +17,7 @@ public class Lesson38 {
         char[] count = text.toCharArray(); // текст становится чаром
         for(int i = 0; i < count.length; i++) { // чар будет итерироваться
             if(count[i] >= 'a' && count[i] <= 'z' || count[i] >= 'A' && count[i] <= 'Z') { // если есть символ в промежутке алфавитных букв
-                letter++; //то буква сумируется (инт)
+                letter++; // то буква сумируется (инт)
             } else if (count[i] >= '0' && count[i] <= '9') { //иначе если есть символ в промежутке от 0 до 9
                 number++; //то суммируется цифра
             } else if (count[i] == ' ') { //иначе если есть пробел
