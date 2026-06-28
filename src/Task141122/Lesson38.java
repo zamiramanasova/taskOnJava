@@ -23,7 +23,7 @@ public class Lesson38 {
             } else if (count[i] == ' ') { // иначе если есть пробел
                 probel++; // суммируется пробел
             } else {
-                different++; //иначе остальные знаки суммируются
+                different++; // иначе остальные знаки суммируются
             }
         }
         int sum = letter + probel + number + different;
