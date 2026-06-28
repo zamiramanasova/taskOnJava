@@ -8,7 +8,7 @@ package Task141122;
 public class Lesson39 {
     public static void main(String[] args) {
         int amount = 0;
-        for (int i = 1; i <= 4 ; i++) { //цикл считает от 1, входные данные 4 (столько раз итерироваться)
+        for (int i = 1; i <= 4 ; i++) { // цикл считает от 1, входные данные 4 (столько раз итерироваться)
             for (int j = 1; j <=4 ; j++) {
                 for (int k = 1; k <=4 ; k++) {
                     if (k != i && k != j && i != j) {
