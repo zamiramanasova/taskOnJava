@@ -1,7 +1,7 @@
 package Task141122;
 
 import java.util.Objects;
-import java.util.Scanner;
+
 
 /**
  * 39. Напишите программу на Java для создания и отображения
