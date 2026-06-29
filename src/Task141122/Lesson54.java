@@ -23,5 +23,4 @@ public class Lesson54 {
     private static boolean countNumber(int p, int q, int r, boolean end) {
         return (p % 10 == q % 10) || (p % 10 == r % 10) || (q % 10 == r % 10);
     }
-
 }
