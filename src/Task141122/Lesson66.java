@@ -8,7 +8,7 @@ public class Lesson66 {
     public static void main(String[] args) {
         int sum = 1;
         int ctr = 0;
-        int n = 0;// инициализация переменных
+        int n = 0; // инициализация переменных
 
         while (ctr < 100) {//пока переменная меньше ста
             n++;//переменная ++
