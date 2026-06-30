@@ -24,7 +24,7 @@ public class LessonNineEarthArea {
     }
 
     private static double distance_Between_LatLong(double lat1,double lon1, double lat2, double lon2) {
-        lat1 = Math.toRadians(lat1);//нужна сначала конвертация в радиансы
+        lat1 = Math.toRadians(lat1); //нужна сначала конвертация в радиансы
         lon1 = Math.toRadians(lon1);
         lat2 = Math.toRadians(lat2);
         lon2 = Math.toRadians(lon2);
