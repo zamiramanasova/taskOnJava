@@ -29,7 +29,7 @@ public class LessonNineEarthArea {
         lat2 = Math.toRadians(lat2);
         lon2 = Math.toRadians(lon2);
         double earthRadius = 6371.01; // Kilometers
-        //Math.acos() возвращает арккосинус указанного в радианах double значения.
+        // Math.acos() возвращает арккосинус указанного в радианах double значения.
         return earthRadius * Math.acos(Math.sin(lat1)*Math.sin(lat2) + Math.cos(lat1)*Math.cos(lat2)*Math.cos(lon1 - lon2));
     }
 }
