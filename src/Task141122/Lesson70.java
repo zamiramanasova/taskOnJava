@@ -10,7 +10,7 @@ public class Lesson70 {
         StringBuilder s = new StringBuilder(a + b + a);
         System.out.println(s);
     }
-    //правильное решение
+    // правильное решение
 //    String str1 ="Python";
 //    String str2 ="Tutorial";
 //
