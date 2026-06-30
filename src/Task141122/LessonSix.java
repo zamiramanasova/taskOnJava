@@ -19,6 +19,6 @@ public class LessonSix {
             newNumber /= 10;
         }
         System.out.println(sum);
-        //System.out.println(newNumber);
+        // System.out.println(newNumber);
     }
 }
