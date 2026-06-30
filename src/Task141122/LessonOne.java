@@ -27,7 +27,7 @@ public class LessonOne {
         int number = scanner.nextInt();
         System.out.println("Введите второе число");
         int number2 = scanner.nextInt();
-        //System.out.println(number * number2);
+        // System.out.println(number * number2);
 
         System.out.println(number + number2);
         System.out.println(number - number2);
