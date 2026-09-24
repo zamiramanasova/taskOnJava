@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 38. Напишите программу на Java для подсчета букв, пробелов,
  * чисел и других символов входной строки.
- * =======
+ * ========
  */
 public class Lesson38 {
     public static void main(String[] args) {
