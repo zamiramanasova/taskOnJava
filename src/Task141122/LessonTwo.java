@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class LessonTwo {
     public static void main(String[] args) {
-        System.out.println("Введите число: ");
+        System.out.println("Введите число: =");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
