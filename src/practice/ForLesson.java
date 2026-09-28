@@ -18,7 +18,7 @@ public class ForLesson {
         System.out.println(list.size());
         System.out.println(list.contains(new Car("VOLGA")));
         System.out.println(list.isEmpty());
-
+        System.out.println(list.indexOf(new Car("mazda"))); // возвратит -1 так как equals не переопределен
         for (Car array : list) {
             System.out.println(array);
         }
