@@ -7,6 +7,7 @@ public class StringOne {
     public static void main(String[] args) {
         String name = "Alice";
         String name2 = "Rome";
+        System.out.println(String.join("! ",name,name2));
         System.out.println(name.length()); // size
         System.out.println(name.equals(name2)); // equals
         char[] charArray = name2.toCharArray();
