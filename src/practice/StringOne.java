@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.Locale;
+
 public class StringOne {
 
     public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class StringOne {
         System.out.println(charArray);
         System.out.println(name2.isEmpty());
         System.out.println(name.concat(name2));
+        System.out.println(name.toUpperCase(Locale.ROOT));
+        System.out.println(name.replace("A", "B"));
+        System.out.println(name.substring(1, 3));
 
     }
 }
