@@ -23,7 +23,6 @@ public class ForLesson {
             System.out.println(array);
         }
     }
-
 }
 
 class Car {
