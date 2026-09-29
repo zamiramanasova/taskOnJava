@@ -38,5 +38,4 @@ class Car {
                 "name='" + name + '\'' +
                 '}';
     }
-
 }
