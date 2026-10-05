@@ -2,6 +2,7 @@ package practice;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 class Car {
     private String name;
@@ -43,5 +44,18 @@ class Car {
                 ", age=" + age +
                 ", parts=" + parts +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return age == car.age && Objects.equals(name, car.name) && Objects.equals(parts, car.parts);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, parts);
     }
 }

@@ -1,9 +1,7 @@
 package practice;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class PrepareForSobes {
     public static void main(String[] args) {
@@ -54,7 +52,37 @@ public class PrepareForSobes {
 
         System.out.println(result);
 
+        Optional<Car> r = list.stream()
+                .filter(d -> d.getAge() < 30)
+                .findAny();
+        System.out.println(r);
 
+        Optional<Car> qwerty = list.stream()
+                .min(Comparator.comparing(Car::getAge));
+        System.out.println(qwerty);
+
+        long counting = list.stream()
+                .filter(e -> e.getAge() >= 20)
+                .count();
+        System.out.println(counting);
+
+        Map<Integer, List<Car>> group = list.stream()
+                .collect(Collectors.groupingBy(Car::getAge));
+        System.out.println(group);
+
+        Map<String, List<Car>> group2 = list.stream()
+                .collect(Collectors.groupingBy(Car::getName));
+        System.out.println(group2);
+
+        Set<Car> ex = list.stream()
+                .collect(Collectors.toSet());
+
+        System.out.println(ex);
+
+        System.out.println("============");
+        list.stream()
+                .map(Car::getName)
+                .forEach(System.out::println);
 
     }
 }
