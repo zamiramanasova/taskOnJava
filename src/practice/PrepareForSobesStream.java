@@ -3,7 +3,7 @@ package practice;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class PrepareForSobes {
+public class PrepareForSobesStream {
     public static void main(String[] args) {
         List<Car> list = new ArrayList<>();
 
@@ -84,5 +84,13 @@ public class PrepareForSobes {
                 .map(Car::getName)
                 .forEach(System.out::println);
 
+        List<String> ex2 = list.stream()
+                .filter(e -> e.getAge() > 20)
+                .filter(e -> "mazda".equals(e.getName()))
+                .map(Car::getName)
+                .distinct()
+                .sorted()
+                .toList();
+        System.out.println(ex2);
     }
 }
