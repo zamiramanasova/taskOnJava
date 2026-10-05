@@ -2,9 +2,19 @@ package practice;
 
 class Car {
     String name;
+    int age;
 
-    public Car(String name) {
+    public Car(String name, int age) {
         this.name = name;
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
@@ -17,8 +27,9 @@ class Car {
 
     @Override
     public String toString() {
-        return "Car {" +
+        return "Car{" +
                 "name='" + name + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
