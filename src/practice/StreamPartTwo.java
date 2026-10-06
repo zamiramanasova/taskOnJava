@@ -66,5 +66,20 @@ public class StreamPartTwo {
         boolean has2= list.stream()
                 .anyMatch(h -> h.getAge() == 200);
         System.out.println(has2);
+
+        int sum = list.stream()
+                .mapToInt(Car::getAge)
+                .sum();
+        System.out.println(sum);
+
+        double average = list.stream()
+                .mapToInt(Car::getAge)
+                .average().orElse(0);
+        System.out.println(average);
+
+        List<Car> name = cars.stream()
+                .sorted(Comparator.comparing(Car::getAge).reversed())
+                .limit(3)
+                .toList();
     }
 }
