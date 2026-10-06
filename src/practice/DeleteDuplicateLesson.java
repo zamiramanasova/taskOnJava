@@ -1,21 +1,19 @@
 package practice;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class DeleteDuplicateLesson {
-
     public static void main(String[] args) {
-        String[] s = {"java", "java", "wor", "wor", "rap"};
-        System.out.println(dupDelete(s));
+        int[] n = {1,2,3,3,4,4,5};
+        System.out.println(deleteDup(n));
     }
 
-    public static Map<String, Integer> dupDelete(String[] words) {
-
-        Map<String, Integer> map = new HashMap<>();
-        for (String w : words) {
-            map.put(w, map.getOrDefault(w, 0) + 1);
+    public static Set<Integer> deleteDup(int[] nums) {
+        Set<Integer> n = new LinkedHashSet<>();
+        for (int num : nums) {
+            n.add(num);
         }
-        return map;
+        return n;
     }
 }
