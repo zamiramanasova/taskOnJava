@@ -23,5 +23,7 @@ public class FindDuplicatenumbers {
         }
 
         return map;
+        //`Time Complexity` O(n)
+        //`Space Complexity`.  O(n)
     }
 }
