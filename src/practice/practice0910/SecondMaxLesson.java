@@ -23,4 +23,6 @@ public class SecondMaxLesson {
         }
         return max2 == Integer.MIN_VALUE ? -1 : max2;
     }
+    // T O(n)
+    // S O(n)
 }
