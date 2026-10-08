@@ -69,5 +69,15 @@ public class StreamLesson {
                 .collect(Collectors.groupingBy(String::toString, Collectors.counting()));
 
         System.out.println(listOfNames);
+
+        List<String> fruits = List.of(
+                "apple", "banana", "apple", "orange",
+                "banana", "apple", "orange", "orange"
+        );
+        Map<String, Long> mapFruits = fruits.stream()
+                .collect(Collectors.groupingBy(String::toString, Collectors.counting()));
+
+        System.out.println(mapFruits);
+
     }
 }
