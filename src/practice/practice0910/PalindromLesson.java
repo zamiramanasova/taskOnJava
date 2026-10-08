@@ -17,4 +17,5 @@ public class PalindromLesson {
         }
         return true;
     }
+    //O(n) / O(1).
 }
