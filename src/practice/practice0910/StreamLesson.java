@@ -12,7 +12,7 @@ public class StreamLesson {
                 .toList();
 
         System.out.println(nums);
-        System.out.println("===========");
+        System.out.println("============");
 
         List<Integer> numbers2 = List.of(5, 2, 8, 2, 1, 5, 9, 3, 8);
         List<Integer> ns = numbers2.stream()
