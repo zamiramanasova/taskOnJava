@@ -1,9 +1,7 @@
 package practice3;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamLesson {
@@ -73,5 +71,14 @@ public class StreamLesson {
                 .toList();
 
         System.out.println(nums7);
+
+        List<String> names8 = List.of(
+                "Anna", "Bob", "Anna", "Tom", "Bob", "Anna"
+        );
+
+        Map<String, Long> nums8 = names8.stream()
+                .collect(Collectors.groupingBy(String::toString, Collectors.counting()));
+
+        System.out.println(nums8);
     }
 }
