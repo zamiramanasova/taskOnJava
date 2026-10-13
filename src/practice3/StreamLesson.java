@@ -1,6 +1,8 @@
 package practice3;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class StreamLesson {
     public static void main(String[] args) {
@@ -25,5 +27,31 @@ public class StreamLesson {
         List<String> names = List.of(
                 "Anna", "Bob", "Alexander", "Tom", "Andrew", "Kate"
         );
+
+        List<String> nums3 = names.stream()
+                .filter(n -> n.startsWith("A"))
+                .filter(n -> n.length() > 4)
+                .sorted(Comparator.comparing(String::length))
+                .toList();
+
+        System.out.println(nums3);
+
+        List<String> names4 = List.of(
+                "Anna", "Bob", "Alexander", "Tom", "Andrew", "Kate", "Alex"
+        );
+
+        Optional<String> nums4 = names4.stream()
+                .max(Comparator.comparing(String::length));
+
+        System.out.println(nums4);
+
+        List<Integer> numbers5 = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+        Optional<Integer> nums5 = numbers5.stream()
+                .filter(n -> n % 2 == 0)
+                .reduce((a, b) -> a + b);
+
+        System.out.println(nums5);
+
     }
 }
