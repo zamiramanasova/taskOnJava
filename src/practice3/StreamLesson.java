@@ -82,6 +82,14 @@ public class StreamLesson {
 
         System.out.println(nums8);
 
+        List<Integer> numbers9 = List.of(2, 4, 6, 8, 10);
+
+        boolean names9 = numbers9.stream()
+                .allMatch(n -> n % 2 == 0);
+
+        System.out.println(names9);
+
+        List<Integer> numbers = List.of(5, 8, 3, 10, 7, 12);
 
     }
 }
