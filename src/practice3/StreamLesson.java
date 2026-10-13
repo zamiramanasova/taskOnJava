@@ -89,7 +89,13 @@ public class StreamLesson {
 
         System.out.println(names9);
 
-        List<Integer> numbers = List.of(5, 8, 3, 10, 7, 12);
+        List<Integer> numbers10 = List.of(5, 8, 3, 10, 7, 12);
+
+        Optional<Integer> names10 = numbers10.stream()
+                .filter(n -> n > 6)
+                .findFirst();
+
+        System.out.println(names10);
 
     }
 }
