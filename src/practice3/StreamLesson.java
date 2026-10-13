@@ -53,5 +53,11 @@ public class StreamLesson {
 
         System.out.println(nums5);
 
+        List<Integer> numbers6 = List.of(1, 2, 3, 4, 5);
+
+        Optional<Integer> nums6 = numbers6.stream()
+                .reduce((a, b) -> a * b);
+
+        System.out.println(nums6);
     }
 }
