@@ -1,8 +1,10 @@
 package practice3;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class StreamLesson {
     public static void main(String[] args) {
@@ -59,5 +61,17 @@ public class StreamLesson {
                 .reduce((a, b) -> a * b);
 
         System.out.println(nums6);
+
+        List<List<Integer>> numbers7 = List.of(
+                List.of(1, 2),
+                List.of(3, 4),
+                List.of(5, 6)
+        );
+
+        List<Integer> nums7 = numbers7.stream()
+                .flatMap(Collection::stream)
+                .toList();
+
+        System.out.println(nums7);
     }
 }
