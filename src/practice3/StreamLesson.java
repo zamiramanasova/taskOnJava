@@ -12,5 +12,18 @@ public class StreamLesson {
                         .toList();
 
         System.out.println(nums);
+
+        List<Integer> numbers2 = List.of(5, 2, 8, 2, 1, 5, 9, 3, 8);
+
+        List<Integer> nums2 = numbers2.stream()
+                .distinct()
+                .sorted()
+                .toList();
+
+        System.out.println(nums2);
+
+        List<String> names = List.of(
+                "Anna", "Bob", "Alexander", "Tom", "Andrew", "Kate"
+        );
     }
 }
