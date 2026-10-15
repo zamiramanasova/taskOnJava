@@ -15,4 +15,6 @@ public class ReverseLesson {
         }
         return rev;
     }
+    // T O(n)
+    // S O(n)
 }
