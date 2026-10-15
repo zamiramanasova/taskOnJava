@@ -36,3 +36,7 @@ openspec/*.log
 .name
 .dataSources.local.xml
 workspace.xml
+
+/baseTask150Java.iml
+.class
+*.iml
