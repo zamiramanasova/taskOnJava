@@ -6,3 +6,33 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+misc.xml
+vcs.xml
+.idea/
+out/
+*.iml
+.claude/
+.name
+.dataSources.local.xml
+workspace.xml
+
+# Claude Code — личное и временное
+.claude/settings.local.json
+.claude/projects/
+.claude/history/
+.claude/todos/
+.claude/logs/
+.claude/statsig/
+.claude/shell-snapshots/
+.claude/.credentials.json
+
+# OpenSpec — кэш и временное
+openspec/.cache/
+openspec/tmp/
+openspec/*.log
+
+# Прочее
+.name
+.dataSources.local.xml
+workspace.xml
