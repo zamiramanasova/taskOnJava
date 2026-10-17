@@ -16,7 +16,7 @@ public class FindDuplicatenumbers {
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int num : nums) {
-            //Для каждого num:
+            // Для каждого num:
             //- если числа ещё нет → getOrDefault(num, 0) возвращает 0;
             //- добавляем 1;
             map.put(num, map.getOrDefault(num, 0) + 1);
