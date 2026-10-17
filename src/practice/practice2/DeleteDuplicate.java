@@ -15,6 +15,6 @@ public class DeleteDuplicate {
         }
         return new ArrayList<>(set);
     }
-    //Time Complexity: O(n) — проходим по всем элементам списка.
+    // Time Complexity: O(n) — проходим по всем элементам списка.
     //Space Complexity: O(n) — в худшем случае все n элементов уникальны и попадут в HashSet.
 }
