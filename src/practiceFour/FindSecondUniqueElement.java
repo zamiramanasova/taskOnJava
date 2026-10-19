@@ -25,6 +25,6 @@ public class FindSecondUniqueElement {
         }
         return secondNumber == Integer.MIN_VALUE ? -1 : secondNumber;
         //Time Complexity` O(n)
-        //`Space Complexity`.  O(1)
+        //Space Complexity`.  O(1)
     }
 }
