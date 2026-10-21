@@ -13,7 +13,7 @@ public class UniqueFirstLesson {
 
         for (int num : numbers) {
             count.put(num, count.getOrDefault(num, 0) + 1);
-            //Если число уже есть в мапе — увеличиваем счётчик на 1.
+            // Если число уже есть в мапе — увеличиваем счётчик на 1.
             //Если нет — getOrDefault(number, 0) вернёт 0, и мы записываем 1.
         }
 
