@@ -22,7 +22,7 @@ public class UniqueFirstLesson {
                 return entry.getKey();
             }
         }
-        //entrySet() даёт все пары в порядке добавления (благодаря LinkedHashMap).
+        // entrySet() даёт все пары в порядке добавления (благодаря LinkedHashMap).
         //Проверяем value == 1 — если число встретилось один раз.
         //Возвращаем его key — само число.
         return -1;
