@@ -21,6 +21,6 @@ public class PalindromLessonString {
         }
         return true;
     }
-    //T O(n)
+    // T O(n)
     //S O(n)
 }
