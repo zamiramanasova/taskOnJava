@@ -56,7 +56,7 @@ public class StreamPartTwo {
                 .distinct()
                 .sorted(Comparator.comparing(Car::getName))
                 .toList();
-        System.out.println("==============");
+        System.out.println("===============");
         System.out.println(unique);
 
         boolean has = list.stream()
