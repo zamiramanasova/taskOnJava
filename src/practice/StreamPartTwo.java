@@ -81,5 +81,6 @@ public class StreamPartTwo {
                 .sorted(Comparator.comparing(Car::getAge).reversed())
                 .limit(3)
                 .toList();
+        System.out.println(name);
     }
 }
