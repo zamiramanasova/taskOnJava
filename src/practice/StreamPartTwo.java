@@ -44,7 +44,7 @@ public class StreamPartTwo {
 
         Optional<Car> c1 = list.stream()
                 .max(Comparator.comparing(Car::getAge));
-        System.out.println("==============================");
+        System.out.println("===============================");
         System.out.println(c);
         System.out.println(c1);
 
