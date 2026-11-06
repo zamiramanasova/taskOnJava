@@ -28,7 +28,7 @@ public class FactorialLesson {
 
     public static int factorialCycle(int num) {
         int result = 1; // если равен 1, то возвращаем 1
-        for (int i = 2; i <= num; i++) { //так как уже написали единицу то идем вверх и пишем 2ку
+        for (int i = 2; i <= num; i++) { // так как уже написали единицу то идем вверх и пишем 2ку
             result = result * i;
         }
         return result;
