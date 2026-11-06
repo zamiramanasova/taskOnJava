@@ -1,7 +1,8 @@
 package practice;
 
 /**
- * И запомни: 0! = 1, 13! переполняет int, при больших n рекурсия упадёт с StackOverflowError.
+ * И запомни: 0! = 1, 13! переполняет int,
+ * при больших n рекурсия упадёт с StackOverflowError.
  */
 public class FactorialLesson {
     public static void main(String[] args) {
