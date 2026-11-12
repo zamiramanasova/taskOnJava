@@ -79,7 +79,7 @@ public class PrepareForSobesStream {
 
         System.out.println(ex);
 
-        System.out.println("===========================");
+        System.out.println("============================");
         list.stream()
                 .map(Car::getName)
                 .forEach(System.out::println);
