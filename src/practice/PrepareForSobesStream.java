@@ -84,7 +84,7 @@ public class PrepareForSobesStream {
                 .map(Car::getName)
                 .forEach(System.out::println);
 
-        System.out.println("===============================");
+        System.out.println("================================");
         List<String> ex2 = list.stream()
                 .filter(e -> e.getAge() > 20)
                 .filter(e -> "mazda".equals(e.getName()))
